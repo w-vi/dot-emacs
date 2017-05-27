@@ -87,9 +87,8 @@
      tabbar
      smex
      vlf
-     iy-go-to-char
+     jump-char
      undo-tree
-     gist
      ggtags
      company
      company-jedi
@@ -173,9 +172,6 @@
 ;; Start server if not runing
 (load "server")
 (unless (server-running-p) (server-start))
-
-(require 'diminish)
-(diminish 'yas-minor-mode)
 
 ;; Set up specifics for the current machine, this needs to be the last
 ;; thing done in the init

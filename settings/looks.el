@@ -69,6 +69,8 @@
 (require 'diminish)
 (eval-after-load "yasnippet" '(diminish 'yas-minor-mode))
 (eval-after-load "undo-tree" '(diminish 'undo-tree-mode))
+(eval-after-load "hideshow" '(diminish 'hs-minor-mode))
+(eval-after-load "autorevert" '(diminish 'auto-revert-mode))
 
 (defmacro rename-modeline (package-name mode new-name)
   `(eval-after-load ,package-name

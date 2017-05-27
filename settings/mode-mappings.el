@@ -2,7 +2,6 @@
 (autoload 'yaml-mode "yaml-mode")
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.yaml$" . yaml-mode))
-(add-to-list 'auto-mode-alist '("jsTestDriver\\.conf$" . yaml-mode))
 
 ;; Emacs lisp
 (add-to-list 'auto-mode-alist '("Carton$" . emacs-lisp-mode))
@@ -11,16 +10,9 @@
 ;; CSS
 (add-to-list 'auto-mode-alist '("\\.scss$" . css-mode))
 
-;; Restclient
-(add-to-list 'auto-mode-alist '("\\.restclient$" . restclient-mode))
-
 ;; Cucumber
 (autoload 'feature-mode "feature-mode")
 (add-to-list 'auto-mode-alist '("\\.feature$" . feature-mode))
-
-;; Adventur
-(autoload 'adventur-mode "adventur-mode")
-(add-to-list 'auto-mode-alist '("\\.adv$" . adventur-mode))
 
 ;; Jade and Stylus (sws = significant whitespace)
 (autoload 'sws-mode "sws-mode")
@@ -43,11 +35,6 @@
                     (require 'revealjs-mode)
                     (revealjs-mode))))))
 
-;; JSP
-(autoload 'crappy-jsp-mode "crappy-jsp-mode")
-(add-to-list 'auto-mode-alist '("\\.jsp$" . crappy-jsp-mode))
-(add-to-list 'auto-mode-alist '("\\.jspf$" . crappy-jsp-mode))
-
 ;; Ruby
 (autoload 'rhtml-mode "rhtml-mode")
 (add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
@@ -64,17 +51,6 @@
 (autoload 'puppet-mode "puppet-mode")
 (add-to-list 'auto-mode-alist '("\\.pp$" . puppet-mode))
 
-;; Groovy
-(autoload 'groovy-mode "groovy-mode")
-(add-to-list 'auto-mode-alist '("\\.groovy$" . groovy-mode))
-(add-to-list 'auto-mode-alist '("\\.gradle$" . groovy-mode))
-
-;; Scala
-(autoload 'scala-mode "scala-mode2")
-(add-to-list 'auto-mode-alist '("\\.scala$" . scala-mode))
-(autoload 'ensime-scala-mode-hook "ensime")
-(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
-
 ;; SVG
 (add-to-list 'auto-mode-alist '("\\.svg$" . image-mode))
 
@@ -88,17 +64,9 @@
 (add-to-list 'auto-mode-alist '("\\.babelrc$" . javascript-mode))
 (add-to-list 'magic-mode-alist '("#!/usr/bin/env node" . js2-mode))
 
-;; Configuration files
-(add-to-list 'auto-mode-alist '("\\.offlineimaprc$" . conf-mode))
-
 ;; Snippets
 (add-to-list 'auto-mode-alist '("yasnippet/snippets" . snippet-mode))
 (add-to-list 'auto-mode-alist '("\\.yasnippet$" . snippet-mode))
-
-;; Buster.JS
-;(autoload 'buster-mode "buster-mode")
-;(setq buster-node-executable "/usr/local/bin/node")
-;(add-file-find-hook-with-pattern "test\\.js$" (lambda () (buster-mode)) "require(\\(\"\\|'\\)buster")
 
 ;; Markdown
 (autoload 'markdown-mode "markdown-mode")
@@ -119,5 +87,8 @@
 (add-to-list 'auto-mode-alist '("srm\\.conf\\'"    . apache-mode))
 (add-to-list 'auto-mode-alist '("access\\.conf\\'" . apache-mode))
 (add-to-list 'auto-mode-alist '("sites-\\(available\\|enabled\\)/" . apache-mode))
+
+;; APIblueprint
+(add-to-list 'auto-mode-alist '("\\.apib\\'" . apib-mode))
 
 (provide 'mode-mappings)

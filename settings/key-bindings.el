@@ -33,11 +33,8 @@
 
 ;; THING AT POINT EDIT
 (global-set-key "\C-cw" 'thing-copy-word)
-(global-set-key "\C-cW" 'thing-paste-word)
 (global-set-key "\C-cs" 'thing-copy-symbol)
-(global-set-key "\C-cS" 'thing-paste-symbol)
 (global-set-key "\C-cv" 'thing-copy-sentence)
-(global-set-key "\C-cV" 'thing-paste-sentence)
 
 ;; HIDE-SHOW
 (global-set-key "\C-ch" 'hs-hide-block)
@@ -55,12 +52,17 @@
 ;; TABBAR
 (global-set-key [C-prior] 'tabbar-backward-tab)  ; previous tab: C-PgUp
 (global-set-key [C-next]  'tabbar-forward-tab)   ; next tab:     C-PgDn
-(global-set-key (kbd "C-S-p") 'tabbar-backward-group)
-(global-set-key (kbd "C-S-n") 'tabbar-forward-group)
+(global-set-key [s-prior] 'tabbar-backward-group)
+(global-set-key [s-next]  'tabbar-forward-group)
 
 ;; Visual Regexp
 (define-key global-map (kbd "M-&") 'vr/query-replace)
 (define-key global-map (kbd "M-/") 'vr/replace)
+
+;; Jump-Char
+(global-set-key (kbd "s-f") 'jump-char-forward)
+(global-set-key (kbd "s-b") 'jump-char-backward)
+(global-set-key (kbd "s-a") 'jump-char-switch-to-ace)
 
 
 ;; F1 manual page
