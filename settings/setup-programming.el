@@ -28,6 +28,13 @@
     (copyright-update)
     (delete-trailing-whitespace)))
 
+
+(defun untabify-buffer ()
+  "Untabify current buffer"
+  (interactive)
+  (untabify (point-min) (point-max)))
+
+
 (defun delete-trailing-whitespace-p ()
   "Should we delete trailing whitespace when saving this file?"
   (save-excursion
@@ -36,6 +43,7 @@
     (let ((pos (point)))
       (goto-char (point-min))
       (and (re-search-forward (concat "Vilibald") pos t) t))))
+
 
 (defun maybe-delete-trailing-whitespace ()
   "Delete trailing whitespace if I am the author of this file."
