@@ -59,6 +59,7 @@
      go-mode
      markdown-mode
      dockerfile-mode
+     docker
      yaml-mode
      web-mode
      yaml-mode
@@ -82,7 +83,6 @@
      org
      guide-key
      elpy
-     py-autopep8
      py-isort
      tabbar
      smex
@@ -147,6 +147,8 @@
 
 (require 'tabbar-cfg)
 (tabbar-mode)
+
+(require 'smartparens-config)
 
 (autoload 'ggtags-mode "ggtags" "Emacs gnu global tags minor mode" t)
 (autoload 'ace-jump-mode "ace-jump-mode" "Emacs quick move minor mode" t)
