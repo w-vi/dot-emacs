@@ -157,6 +157,19 @@ time is displayed."
         (system-time-locale "cs_CZ"))
     (insert (format-time-string format))))
 
+;;;; Windows related stuff
+
+(defun transpose-windows (arg)
+   "Transpose the buffers shown in two windows."
+   (interactive "p")
+   (let ((selector (if (>= arg 0) 'next-window 'previous-window)))
+     (while (/= arg 0)
+       (let ((this-win (window-buffer))
+             (next-win (window-buffer (funcall selector))))
+         (set-window-buffer (selected-window) next-win)
+         (set-window-buffer (funcall selector) this-win)
+         (select-window (funcall selector)))
+       (setq arg (if (plusp arg) (1- arg) (1+ arg))))))
 
 ;; ;; Sudo open file using TRAMP
 ;; (defadvice ido-find-file (after find-file-sudo activate)
