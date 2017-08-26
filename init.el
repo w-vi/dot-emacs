@@ -78,7 +78,7 @@
      smartparens
      ido-vertical-mode
      ido-at-point
-     ido-ubiquitous
+     ido-completing-read+
      browse-kill-ring
      org
      guide-key
@@ -99,6 +99,7 @@
      go-projectile
      go-snippets
      multiple-cursors
+     wrap-region
      diminish
      editorconfig)))
 

@@ -28,8 +28,7 @@
 (ido-at-point-mode)
 
 ;; Use ido everywhere
-(require 'ido-ubiquitous)
+(require 'ido-completing-read+)
 (ido-ubiquitous-mode 1)
 
 (provide 'setup-ido)
-
