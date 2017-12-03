@@ -117,8 +117,6 @@
     (local-set-key (kbd "M-.") 'godef-jump)
     ; Go doc
     (local-set-key (kbd "C-c C-g") 'godoc)
-    ; Go oracle
-    (load-file "$GOPATH/src/golang.org/x/tools/cmd/oracle/oracle.el")
     (if (not (string-match "go" compile-command))
         (set (make-local-variable 'compile-command)
              "go build -v && go test -v && go vet"))
