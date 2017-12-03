@@ -64,6 +64,9 @@
 (global-set-key (kbd "s-b") 'jump-char-backward)
 (global-set-key (kbd "s-a") 'jump-char-switch-to-ace)
 
+;; w3m at point
+(global-set-key "\C-xw" 'browse-url-at-point)
+
 
 ;; F1 manual page
 (global-set-key [f1] 'man)

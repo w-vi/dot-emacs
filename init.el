@@ -102,7 +102,8 @@
      wrap-region
      diminish
      editorconfig
-     engine-mode)))
+     engine-mode
+     w3m)))
 
 (condition-case nil
     (init--install-packages)
@@ -152,6 +153,7 @@
 
 (require 'smartparens-config)
 
+
 (autoload 'ggtags-mode "ggtags" "Emacs gnu global tags minor mode" t)
 (autoload 'ace-jump-mode "ace-jump-mode" "Emacs quick move minor mode" t)
 (autoload 'dockerfile-mode "dockerfile-mode" "Emacs Dockerfile editoing" t)
@@ -161,6 +163,9 @@
 
 ;; Setup key bindings
 (require 'key-bindings)
+
+;; W3m
+(require 'setup-w3m)
 
 ;; Engine Mode
 (require 'setup-engine)
