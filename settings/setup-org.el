@@ -30,4 +30,14 @@
  'org-babel-load-languages
  '((ditaa . t)))
 
+(require 'org-page)
+(setq op/repository-directory "/home/wvi/src/wvi.cz")
+(setq op/site-domain "http://wvi.cz/")
+(setq op/personal-github-link "https://github.com/w-vi")
+(setq op/repository-html-branch "gh-pages")
+(setq op/repository-org-branch "master")
+(setq op/site-main-title "wvi ... core dump")
+(setq op/site-sub-title "nil")
+(setq op/theme 'kactus)
+
 (provide 'setup-org)

@@ -101,7 +101,8 @@
      multiple-cursors
      wrap-region
      diminish
-     editorconfig)))
+     editorconfig
+     engine-mode)))
 
 (condition-case nil
     (init--install-packages)
@@ -160,6 +161,9 @@
 
 ;; Setup key bindings
 (require 'key-bindings)
+
+;; Engine Mode
+(require 'setup-engine)
 
 ;; Go FULLSCREEN
 (defun toggle-fullscreen ()
