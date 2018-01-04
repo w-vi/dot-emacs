@@ -35,6 +35,7 @@
 
 ;; ABBREVS-FILE
 (setq abbrev-file-name (expand-file-name "abbrev_defs" my-emacs-dir))
+(set-default 'abbrev-mode t)
 
 ;; ALIASES
 (defalias 'yes-or-no-p 'y-or-n-p)
@@ -89,4 +90,3 @@
 (setq save-place-file (expand-file-name ".places" user-emacs-directory))
 
 (provide 'basics)
-

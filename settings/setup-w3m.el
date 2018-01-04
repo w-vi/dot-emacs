@@ -14,3 +14,5 @@
 
 ;; use cookies
 (setq w3m-use-cookies t)
+
+(provide 'setup-w3m)

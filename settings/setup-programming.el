@@ -94,6 +94,7 @@
 
 ;; PYTHON
 (elpy-enable)
+(elpy-use-ipython)
 ;; (load-library "python-import-add")
 (defun wvi-python-hook ()
   (ggtags-mode 1)

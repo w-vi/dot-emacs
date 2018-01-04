@@ -57,6 +57,8 @@
   '(
    ))
 
+(define-abbrev-table 'change-log-mode-abbrev-table '())
+
 (define-abbrev-table 'comint-mode-abbrev-table '())
 
 (define-abbrev-table 'completion-list-mode-abbrev-table '())
@@ -83,6 +85,8 @@
 
 (define-abbrev-table 'ess-julia-mode-abbrev-table '())
 
+(define-abbrev-table 'ffip-diff-mode-abbrev-table '())
+
 (define-abbrev-table 'finder-mode-abbrev-table '())
 
 (define-abbrev-table 'flycheck-error-list-mode-abbrev-table '())
@@ -91,7 +95,15 @@
 
 (define-abbrev-table 'gfm-mode-abbrev-table '())
 
-(define-abbrev-table 'global-abbrev-table '())
+(define-abbrev-table 'ggtags-global-mode-abbrev-table '())
+
+(define-abbrev-table 'ggtags-view-search-history-mode-abbrev-table '())
+
+(define-abbrev-table 'global-abbrev-table
+  '(
+    ("Apairy" "Apiary" nil 2)
+    ("apairy" "apiary" nil 2)
+   ))
 
 (define-abbrev-table 'go-mode-abbrev-table '())
 
@@ -113,6 +125,10 @@
 
 (define-abbrev-table 'inferior-python-mode-abbrev-table '())
 
+(define-abbrev-table 'ivy-occur-grep-mode-abbrev-table '())
+
+(define-abbrev-table 'ivy-occur-mode-abbrev-table '())
+
 (define-abbrev-table 'java-mode-abbrev-table
   '(
    ))
@@ -125,7 +141,49 @@
 
 (define-abbrev-table 'lisp-mode-abbrev-table '())
 
+(define-abbrev-table 'log-edit-mode-abbrev-table '())
+
+(define-abbrev-table 'magit-cherry-mode-abbrev-table '())
+
+(define-abbrev-table 'magit-diff-mode-abbrev-table '())
+
+(define-abbrev-table 'magit-log-mode-abbrev-table '())
+
+(define-abbrev-table 'magit-log-select-mode-abbrev-table '())
+
+(define-abbrev-table 'magit-merge-preview-mode-abbrev-table '())
+
+(define-abbrev-table 'magit-mode-abbrev-table '())
+
 (define-abbrev-table 'magit-popup-mode-abbrev-table '())
+
+(define-abbrev-table 'magit-process-mode-abbrev-table '())
+
+(define-abbrev-table 'magit-reflog-mode-abbrev-table '())
+
+(define-abbrev-table 'magit-refs-mode-abbrev-table '())
+
+(define-abbrev-table 'magit-repolist-mode-abbrev-table '())
+
+(define-abbrev-table 'magit-revision-mode-abbrev-table '())
+
+(define-abbrev-table 'magit-stash-mode-abbrev-table '())
+
+(define-abbrev-table 'magit-stashes-mode-abbrev-table '())
+
+(define-abbrev-table 'magit-status-mode-abbrev-table '())
+
+(define-abbrev-table 'makefile-automake-mode-abbrev-table '())
+
+(define-abbrev-table 'makefile-bsdmake-mode-abbrev-table '())
+
+(define-abbrev-table 'makefile-gmake-mode-abbrev-table '())
+
+(define-abbrev-table 'makefile-imake-mode-abbrev-table '())
+
+(define-abbrev-table 'makefile-makepp-mode-abbrev-table '())
+
+(define-abbrev-table 'makefile-mode-abbrev-table '())
 
 (define-abbrev-table 'markdown-mode-abbrev-table '())
 

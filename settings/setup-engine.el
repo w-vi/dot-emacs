@@ -12,17 +12,15 @@
   :keybinding "d")
 
 (defengine rfcs
-  "http://pretty-rfc.herokuapp.com/search?q=%s")
+  "http://pretty-rfc.herokuapp.com/search?q=%s"
+  :keybinding "r")
 
 (defengine stack-overflow
-  "https://stackoverflow.com/search?q=%s")
+  "https://stackoverflow.com/search?q=%s"
+  :keybinding "s")
 
 (defengine wikipedia
   "http://www.wikipedia.org/search-redirect.php?language=en&go=Go&search=%s"
-  :keybinding "w"
-  :docstring "Searchin' the wikis.")
-
-(defengine youtube
-  "http://www.youtube.com/results?aq=f&oq=&search_query=%s")
+  :keybinding "w")
 
 (provide 'setup-engine)
