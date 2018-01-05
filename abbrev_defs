@@ -101,8 +101,9 @@
 
 (define-abbrev-table 'global-abbrev-table
   '(
-    ("Apairy" "Apiary" nil 2)
-    ("apairy" "apiary" nil 2)
+    ("Apairy" "Apiary" nil 5)
+    ("apairy" "apiary" nil 3)
+    ("audtilog" "auditlog" nil 0)
    ))
 
 (define-abbrev-table 'go-mode-abbrev-table '())
@@ -216,6 +217,12 @@
 (define-abbrev-table 'python-mode-skeleton-abbrev-table
   '(
    ))
+
+(define-abbrev-table 'rst-mode-abbrev-table
+  '(
+   ))
+
+(define-abbrev-table 'rst-toc-mode-abbrev-table '())
 
 (define-abbrev-table 'select-tags-table-mode-abbrev-table '())
 
