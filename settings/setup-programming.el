@@ -94,7 +94,8 @@
 
 ;; PYTHON
 (elpy-enable)
-(elpy-use-ipython)
+(setq python-shell-interpreter "ipython"
+      python-shell-interpreter-args "-i --simple-prompt")
 ;; (load-library "python-import-add")
 (defun wvi-python-hook ()
   (ggtags-mode 1)
@@ -142,6 +143,7 @@
      (setq-default js2-basic-offset 2)))
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 (add-hook 'js2-mode-hook 'progmodes-hooks)
+(setq js-indent-level 2)
 
 ;; COFFEESCRIPT
 (defun wvi-coffee-compile-and-open ()

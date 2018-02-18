@@ -23,4 +23,8 @@
   "http://www.wikipedia.org/search-redirect.php?language=en&go=Go&search=%s"
   :keybinding "w")
 
+(defengine python
+  "https://docs.pythgon.org/3/search.html?q=%s&check_keywords=yes&area=default"
+  :keybinding "p")
+
 (provide 'setup-engine)
