@@ -24,7 +24,7 @@
   :keybinding "w")
 
 (defengine python
-  "https://docs.pythgon.org/3/search.html?q=%s&check_keywords=yes&area=default"
+  "https://docs.python.org/3/search.html?q=%s&check_keywords=yes&area=default"
   :keybinding "p")
 
 (provide 'setup-engine)
