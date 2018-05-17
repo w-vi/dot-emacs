@@ -51,59 +51,67 @@
 ;; Install extensions if they're missing
 (defun init--install-packages ()
   (packages-install
-   '(magit
-     move-text
-     htmlize
-     ace-jump-mode
-     coffee-mode
-     go-mode
-     markdown-mode
-     dockerfile-mode
-     docker
-     yaml-mode
-     web-mode
-     yaml-mode
+   '(ace-jump-mode
      apib-mode
-     slime
-     visual-regexp
+     browse-kill-ring
+     company
+     company-go
+     company-jedi
+     company-quickhelp
+     company-terraform
+     company-web
+     diminish
      dired-details
-     whitespace-cleanup-mode
+     direx
+     docker
+     dockerfile-mode
+     ecb
+     editorconfig
+     elpy
+     engine-mode
      epc
+     expand-region
      fill-column-indicator
      flx
      flx-ido
      flycheck-package
-     dired-details
-     yasnippet
-     smartparens
-     ido-vertical-mode
-     ido-at-point
-     ido-completing-read+
-     browse-kill-ring
-     org
-     guide-key
-     elpy
-     py-isort
-     tabbar
-     smex
-     vlf
-     jump-char
-     undo-tree
      ggtags
-     company
-     company-jedi
-     company-go
-     company-web
-     expand-region
-     projectile
+     gnuplot
+     gnuplot-mode
+     go-mode
      go-projectile
      go-snippets
+     graphviz-dot-mode
+     guide-key
+     htmlize
+     ido-at-point
+     ido-completing-read+
+     ido-ubiquitous
+     ido-vertical-mode
+     jump-char
+     magit
+     magit-filenotify
+     magit-find-file
+     markdown-mode
+     move-text
      multiple-cursors
+     org
+     projectile
+     py-autopep8
+     py-isort
+     slime
+     smartparens
+     smex
+     tabbar
+     undo-tree
+     visual-regexp
+     vlf
+     w3m
+     web-mode
+     whitespace-cleanup-mode
      wrap-region
-     diminish
-     editorconfig
-     engine-mode
-     w3m)))
+     yaml-mode
+     yasnippet)))
 
 (condition-case nil
     (init--install-packages)
