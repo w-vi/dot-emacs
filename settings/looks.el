@@ -20,6 +20,9 @@
 (require 'mwheel)
 (mouse-wheel-mode t)
 
+;; tabs are 4 spacee in size otherwise it is too much
+(setq default-tab-width 4)
+
 ;; Bug off with  new frames
 (setq ns-pop-up-frames nil)
 
