@@ -1,13 +1,12 @@
-;;; GENERAL SETTINGS
-;; to undo, do M-x tool-bar-mode;
-
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
 (package-initialize)
 
-(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
+;;; GENERAL SETTINGS
+
+(if (fboundp 'tool-bar-mode) (tool-bar-mode -1)) ;; to undo, do M-x tool-bar-mode;
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1)) ; scrollbar is pretty useless
 (if (fboundp 'blink-cursor-mode) (blink-cursor-mode -1)) ; blinking cursor is evil
 (if (fboundp 'tooltip-mode) (tooltip-mode -1)) ; never used it
@@ -75,6 +74,7 @@
      flx
      flx-ido
      flycheck-package
+     geiser
      ggtags
      gnuplot
      gnuplot-mode
@@ -86,15 +86,14 @@
      htmlize
      ido-at-point
      ido-completing-read+
-     ido-ubiquitous
      ido-vertical-mode
+     iedit
      jump-char
      magit
      magit-filenotify
      magit-find-file
      markdown-mode
      move-text
-     multiple-cursors
      org
      projectile
      py-autopep8
@@ -111,7 +110,8 @@
      whitespace-cleanup-mode
      wrap-region
      yaml-mode
-     yasnippet)))
+     yasnippet
+     yasnippet-snippets)))
 
 (condition-case nil
     (init--install-packages)
@@ -149,6 +149,7 @@
 (require 'expand-region)
 (require 'visual-regexp)
 (require 'thing-edit)
+(require 'iedit)
 
 (require 'projectile)
 (projectile-global-mode)
@@ -160,7 +161,6 @@
 (tabbar-mode)
 
 (require 'smartparens-config)
-
 
 (autoload 'ggtags-mode "ggtags" "Emacs gnu global tags minor mode" t)
 (autoload 'ace-jump-mode "ace-jump-mode" "Emacs quick move minor mode" t)
