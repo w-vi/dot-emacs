@@ -4,6 +4,9 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
+;; Uncomment in case of wWarnings or issues in the init time
+;; (advice-add 'display-warning :around #'dont-delay-compile-warnings)
+
 ;;; GENERAL SETTINGS
 
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1)) ;; to undo, do M-x tool-bar-mode;

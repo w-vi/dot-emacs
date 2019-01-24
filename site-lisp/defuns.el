@@ -198,3 +198,15 @@ by using nxml's indentation rules."
   "Pretty format XML markup in buffer."
   (interactive)
   (wvi-pretty-print-xml-region (point-min) (point-max)))
+
+
+(defun dont-delay-compile-warnings (fun type &rest args)
+  "Due to display-warning delaying warnings until after init time
+the file name and location are no longer known. This should solve
+it but it also might prevent the *Warnings* buffer from popping
+up (as described in Bug#20792), so check manually in the
+*Compile-Log* buffer."
+  (if (eq type 'bytecomp)
+      (let ((after-init-time t))
+        (apply fun type args))
+    (apply fun type args)))
