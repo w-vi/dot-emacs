@@ -163,8 +163,4 @@
      (setq ff-other-file-alist 'wvi-coffee-other-file-alist)))
 (add-hook 'coffee-mode-hook 'progmodes-hooks)
 
-;; GYP
-(setq load-path (cons "~/src/gyp/tools/emacs" load-path))
-(require 'gyp)
-
 (provide 'setup-programming)
