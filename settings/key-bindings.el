@@ -60,8 +60,8 @@
 (define-key global-map (kbd "M-/") 'vr/replace)
 
 ;; Jump-Char
-(global-set-key (kbd "s-f") 'jump-char-forward)
-(global-set-key (kbd "s-b") 'jump-char-backward)
+(global-set-key (kbd "s-s") 'jump-char-forward)
+(global-set-key (kbd "s-r") 'jump-char-backward)
 (global-set-key (kbd "s-a") 'jump-char-switch-to-ace)
 
 ;; w3m at point
