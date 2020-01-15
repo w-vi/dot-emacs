@@ -30,6 +30,7 @@
 
 ;;Ace jump mode
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+(define-key global-map (kbd "C-c C-SPC") 'ace-jump-mode)
 
 ;; THING AT POINT EDIT
 (global-set-key "\C-cw" 'thing-copy-word)
