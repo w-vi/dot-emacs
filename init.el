@@ -1,3 +1,4 @@
+
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
@@ -31,6 +32,7 @@
 ;; Set up load path
 (add-to-list 'load-path settings-dir)
 (add-to-list 'load-path site-lisp-dir)
+(add-to-list 'load-path "/usr/share/emacs/site-lisp")
 
 ;; Settings for current machine
 (setq machine-settings-dir

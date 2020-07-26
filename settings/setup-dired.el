@@ -9,7 +9,7 @@
   "Top of the buffer is actually first file not first line"
   (interactive)
   (beginning-of-buffer)
-  (dired-next-line 4))
+  (dired-next-line 2))
 (define-key dired-mode-map
   (vector 'remap 'beginning-of-buffer) 'dired-back-to-top)
 

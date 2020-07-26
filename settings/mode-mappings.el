@@ -80,6 +80,9 @@
 ;; org-mode
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 
+;;gettext po files
+(add-to-list 'auto-mode-alist '("\\.po\\'\\|\\.po\\." . po-mode))
+
 ;; Apache config
 (autoload 'apache-mode "apache-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.htaccess\\'"   . apache-mode))
