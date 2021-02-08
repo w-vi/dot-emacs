@@ -104,11 +104,11 @@
   (setq python-indent-offset 4))
 
 (add-hook 'python-mode-hook 'wvi-python-hook)
+(add-hook 'python-mode-hook 'progmodes-hooks)
 
 
 ;; GO-LANG
 (require 'go-mode)
-(require 'company-go)
 (add-hook 'go-mode-hook
   (lambda ()
     (setq-default)
@@ -123,9 +123,9 @@
         (set (make-local-variable 'compile-command)
              "go build -v && go test -v && go vet"))
     (add-hook 'before-save-hook 'gofmt-before-save)
-    (set (make-local-variable 'company-backends) '(company-go))
     (company-mode)))
 (add-hook 'go-mode-hook 'progmodes-hooks)
+(add-hook 'go-mode-hook 'lsp-deferred)
 
 ;; (E)LISP stuff
 (require 'package-lint)

@@ -59,7 +59,7 @@
      apib-mode
      browse-kill-ring
      company
-     company-go
+     lsp-mode
      company-jedi
      company-quickhelp
      company-terraform
