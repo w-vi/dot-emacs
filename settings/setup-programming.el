@@ -96,6 +96,7 @@
 (elpy-enable)
 (setq python-shell-interpreter "ipython"
       python-shell-interpreter-args "-i --simple-prompt")
+(define-key elpy-mode-map (kbd "C-c C-r c") 'elpy-format-code)
 ;; (load-library "python-import-add")
 (defun wvi-python-hook ()
   (ggtags-mode 1)
@@ -108,6 +109,7 @@
 
 
 ;; GO-LANG
+(require 'lsp-mode)
 (require 'go-mode)
 (add-hook 'go-mode-hook
   (lambda ()

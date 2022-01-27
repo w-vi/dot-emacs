@@ -4,6 +4,7 @@
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
 (package-initialize)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 
 ;; Uncomment in case of wWarnings or issues in the init time
 ;; (advice-add 'display-warning :around #'dont-delay-compile-warnings)
