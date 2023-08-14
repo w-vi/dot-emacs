@@ -20,6 +20,9 @@
 
 (setq text-mode-hook (quote (turn-on-auto-fill text-mode-hook-identify)))
 
+;; Default tab width is 4 spaces
+(setq tab-width 4)
+
 ;; UTF-8
 (setq locale-coding-system 'utf-8)
 (set-language-environment "UTF-8")
@@ -28,7 +31,6 @@
 (set-keyboard-coding-system 'utf-8)
 (set-selection-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
-
 
 ;; Remove text in active region if inserting text
 (delete-selection-mode t)

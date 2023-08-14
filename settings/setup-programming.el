@@ -28,7 +28,6 @@
     (copyright-update)
     (delete-trailing-whitespace)))
 
-
 (defun untabify-buffer ()
   "Untabify current buffer"
   (interactive)

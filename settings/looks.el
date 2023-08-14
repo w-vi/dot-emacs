@@ -4,7 +4,7 @@
 
 ;; line and column number in all files, all the time
 ;; and please higlight those bloody parenthesis
-(global-linum-mode t)
+(global-display-line-numbers-mode t)
 (column-number-mode t)
 (show-paren-mode t)
 
