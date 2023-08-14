@@ -117,6 +117,7 @@
     (setq tab-width 4)
     (setq indent-tabs-mode t)
     (setq show-trailing-whitespace nil)
+    (go-guru-hl-identifier-mode)
     (local-set-key (kbd "M-.") 'godef-jump)
     ; Go doc
     (local-set-key (kbd "C-c C-g") 'godoc)
