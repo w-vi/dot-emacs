@@ -1,4 +1,3 @@
-
 ;;Save me buffers and stuff in the rare occasion that I close emacs
 (desktop-save-mode t)
 
@@ -90,5 +89,8 @@
 (require 'saveplace)
 (setq-default save-place t)
 (setq save-place-file (expand-file-name ".places" user-emacs-directory))
+
+;; Undo tree temp files in cahce
+(setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/cache")))
 
 (provide 'basics)

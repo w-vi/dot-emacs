@@ -1,4 +1,3 @@
-
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
@@ -65,12 +64,11 @@
      company-quickhelp
      company-terraform
      company-web
+     company-go
      diminish
-     dired-details
      direx
      docker
      dockerfile-mode
-     ecb
      editorconfig
      elpy
      engine-mode
@@ -101,6 +99,7 @@
      markdown-mode
      move-text
      org
+     org-page
      projectile
      py-autopep8
      py-isort
