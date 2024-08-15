@@ -6,16 +6,20 @@
              '("melpa" . "http://melpa.org/packages/") t)
 (add-to-list 'package-archives
              '("melpa-stable" . "http://stable.melpa.org/packages/") t)
+;; Add elap nongnu
+(add-to-list 'package-archives
+             '("nongnu" . "https://elpa.nongnu.org/nongnu/"))
 ;; Org-mode's repository
 (add-to-list 'package-archives
              '("org" . "http://orgmode.org/elpa/") t)
+
 
 (setq package-enable-at-startup nil)
 (package-initialize)
 
 (unless (file-exists-p "~/.emacs.d/elpa/archives/melpa")
   (package-refresh-contents))
-  
+
 (defun packages-install (packages)
   (--each packages
     (when (not (package-installed-p it))

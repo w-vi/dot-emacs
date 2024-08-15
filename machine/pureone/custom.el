@@ -16,8 +16,10 @@
    '(("gnu" . "https://elpa.gnu.org/packages/")
      ("org" . "https://orgmode.org/elpa/")
      ("melpa" . "https://melpa.org/packages/")))
+ '(package-check-signature 'allow-unsigned)
  '(package-selected-packages
-   '(diminish company-terraform company cue-mode js2-mode edit-server py-yapf jedi lsp-mode wrap-region w3m engine-mode docker graphviz-dot-mode org-page jump-char editorconfig expand-region ggtags undo-tree iy-go-to-char tabbar guide-key browse-kill-ring ido-ubiquitous ido-at-point ido-vertical-mode whitespace-cleanup-mode dired-details slime ace-jump-mode move-text yaml-mode web-mode smex smartparens request-deferred py-isort py-autopep8 org magit-push-remote magit-find-file magit-filenotify lua-mode go-snippets go-projectile gnuplot-mode gnuplot gist flycheck-package flx-ido elpy ecb dockerfile-mode direx company-web company-tern company-quickhelp company-jedi company-go coffee-mode apib-mode))
+   '(eat eshell-atuin cargo-mode rust-auto-use rust-mode geiser fill-column-indicator diminish company-terraform company cue-mode js2-mode edit-server py-yapf jedi lsp-mode wrap-region w3m engine-mode docker graphviz-dot-mode org-page jump-char editorconfig expand-region ggtags undo-tree iy-go-to-char tabbar guide-key browse-kill-ring ido-ubiquitous ido-at-point ido-vertical-mode whitespace-cleanup-mode dired-details slime ace-jump-mode move-text yaml-mode web-mode smex smartparens request-deferred py-isort py-autopep8 org magit-push-remote magit-find-file magit-filenotify lua-mode go-snippets go-projectile gnuplot-mode gnuplot gist flycheck-package flx-ido elpy ecb dockerfile-mode direx company-web company-tern company-quickhelp company-jedi company-go coffee-mode apib-mode))
+ '(python-shell-interpreter "ipython3")
  '(show-paren-mode t)
  '(tabbar-separator '(0.5))
  '(tool-bar-mode nil)

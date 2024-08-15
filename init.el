@@ -69,6 +69,7 @@
      direx
      docker
      dockerfile-mode
+     eat
      editorconfig
      elpy
      engine-mode
